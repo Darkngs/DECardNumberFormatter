@@ -14,20 +14,33 @@ print(cardNumberFormatter.number(from: "34 12 123456 12345 1234"))
 print(cardNumberFormatter.number(from: "37 12 123456 12345 1234"))
 
 // Diners Club
-print(cardNumberFormatter.number(from: "300 1 123456 12345 1234"))
+var cardNumber = "300 1 123456 12345 1234"
+print(cardNumberFormatter.number(from: cardNumber))
+if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+   print("Card number: \(cardNumber) - is valid!")
+}
 
 // Other
-print(cardNumberFormatter.number(from: "4141 4141 4141 4141 123"))
+cardNumber = "4111111111111111"
+print(cardNumberFormatter.number(from: cardNumber))
+if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+   print("Card number: \(cardNumber) - is valid!")
+}
 
 // UATP
-print(cardNumberFormatter.number(from: "1 234 12345 123456 1234"))
+cardNumber = "1 234 12345 123456 1234"
+print(cardNumberFormatter.number(from: cardNumber))
+if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+   print("Card number: \(cardNumber) - is valid!")
+}
 ```
 ##### Output
 ```
 3412 123456 12345 1234
 3712 123456 12345 1234
 3001 123456 12345 1234
-4141 4141 4141 4141 123
+4111 1111 1111 1111
+Card number: 4111111111111111 - is valid!
 1234 12345 123456 1234
 ```
 
