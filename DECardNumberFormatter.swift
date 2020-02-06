@@ -35,10 +35,6 @@ public class DECardNumberFormatter {
       return cardFormat
    }
    
-   private func clearCardNumber(_ cardNumber: String) -> String {
-      return cardNumber.replacingOccurrences(of: " ", with: "")
-   }
-   
    // MARK: -
    
    public func cardType(from cardNumber: String) -> DECardNumberType {
@@ -63,8 +59,12 @@ public class DECardNumberFormatter {
       return .other
    }
    
+   public func clearNumber(from cardNumber: String) -> String {
+      return cardNumber.replacingOccurrences(of: " ", with: "")
+   }
+   
    public func number(from cardNumber: String) -> String {
-      var formattedCardNumber = clearCardNumber(cardNumber)
+      var formattedCardNumber = clearNumber(from: cardNumber)
       let length = formattedCardNumber.count
       if length > 19 {
          return formattedCardNumber
