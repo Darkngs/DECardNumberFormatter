@@ -23,12 +23,24 @@ class ViewController: UIViewController {
       print(cardNumberFormatter.number(from: "37 12 123456 12345 1234"))
       
       // Diners Club
-      print(cardNumberFormatter.number(from: "300 1 123456 12345 1234"))
+      var cardNumber = "300 1 123456 12345 1234"
+      print(cardNumberFormatter.number(from: cardNumber))
+      if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+         print("Card number: \(cardNumber) - is valid!")
+      }
       
       // Other
-      print(cardNumberFormatter.number(from: "4141 4141 4141 4141 123"))
+      cardNumber = "4111111111111111"
+      print(cardNumberFormatter.number(from: cardNumber))
+      if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+         print("Card number: \(cardNumber) - is valid!")
+      }
       
       // UATP
-      print(cardNumberFormatter.number(from: "1 234 12345 123456 1234"))
+      cardNumber = "1 234 12345 123456 1234"
+      print(cardNumberFormatter.number(from: cardNumber))
+      if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+         print("Card number: \(cardNumber) - is valid!")
+      }
    }
 }

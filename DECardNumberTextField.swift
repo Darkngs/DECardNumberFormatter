@@ -55,11 +55,12 @@ extension DECardNumberTextField: UITextFieldDelegate {
    }
    
    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-      if shouldFormatPhoneNumber {
-         if !string.isNumberOrEmpty() {
-            shouldFormatPhoneNumber = false
-         }
+      guard string.isNumberOrEmpty() else {
+         shouldFormatPhoneNumber = false
+         return false
       }
+      
+      shouldFormatPhoneNumber = true
       
       return true
    }

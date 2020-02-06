@@ -60,7 +60,10 @@ public class DECardNumberFormatter {
    }
    
    public func clearNumber(from cardNumber: String) -> String {
-      return cardNumber.replacingOccurrences(of: " ", with: "")
+      let numbers = Set("0123456789")
+      return cardNumber.filter {
+         numbers.contains($0)
+      }
    }
    
    public func number(from cardNumber: String) -> String {
@@ -103,6 +106,17 @@ public class DECardNumberFormatter {
       }
       
       return formattedCardNumber
+   }
+   
+   public func isValidLuhnCardNumber(_ cardNumber: String) -> Bool {
+      let reversedDigits = clearNumber(from: cardNumber).reversed().map {
+         Int(String($0))!
+      }
+      let checkSum = reversedDigits.enumerated().reduce(0) { sum, pair in
+         let (reversedIndex, digit) = pair
+         return sum + (reversedIndex % 2 == 0 ? digit : (((digit * 2 - 1) % 9) + 1))
+      }
+      return checkSum % 10 == 0
    }
 }
 
