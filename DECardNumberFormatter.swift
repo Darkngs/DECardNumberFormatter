@@ -22,6 +22,8 @@ public enum DECardNumberType {
 
 public class DECardNumberFormatter {
    
+   private let maxLength = 19
+   
    private func cardFormat(for cardType: DECardNumberType) -> DECardNumberFormat {
       var cardFormat: DECardNumberFormat = .de4444
       switch cardType {
@@ -69,8 +71,9 @@ public class DECardNumberFormatter {
    public func number(from cardNumber: String) -> String {
       var formattedCardNumber = clearNumber(from: cardNumber)
       let length = formattedCardNumber.count
-      if length > 19 {
-         return formattedCardNumber
+      if length > maxLength {
+         let index = formattedCardNumber.index(formattedCardNumber.startIndex, offsetBy: maxLength)
+         formattedCardNumber = String(formattedCardNumber.prefix(upTo: index))
       }
       
       let format = cardFormat(for: cardType(from: formattedCardNumber))
