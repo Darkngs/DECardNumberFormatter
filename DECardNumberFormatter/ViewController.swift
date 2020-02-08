@@ -19,18 +19,11 @@ class ViewController: UIViewController {
       let cardNumberFormatter = DECardNumberFormatter()
       
       // AmEx
-      print(cardNumberFormatter.number(from: "34 12 123456 12345 1234"))
-      print(cardNumberFormatter.number(from: "37 12 123456 12345 1234"))
+      print(cardNumberFormatter.number(from: "34 12 123456 12345"))
+      print(cardNumberFormatter.number(from: "37 12 123456 12345"))
       
       // Diners Club
-      var cardNumber = "300 1 123456 12345 1234"
-      print(cardNumberFormatter.number(from: cardNumber))
-      if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
-         print("Card number: \(cardNumber) - is valid!")
-      }
-      
-      // Other
-      cardNumber = "4111111111111111"
+      var cardNumber = "300 1 123456 1234"
       print(cardNumberFormatter.number(from: cardNumber))
       if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
          print("Card number: \(cardNumber) - is valid!")
@@ -38,6 +31,13 @@ class ViewController: UIViewController {
       
       // UATP
       cardNumber = "1 234 12345 123456 1234"
+      print(cardNumberFormatter.number(from: cardNumber))
+      if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
+         print("Card number: \(cardNumber) - is valid!")
+      }
+      
+      // Visa
+      cardNumber = "4111111111111111"
       print(cardNumberFormatter.number(from: cardNumber))
       if cardNumberFormatter.isValidLuhnCardNumber(cardNumber) {
          print("Card number: \(cardNumber) - is valid!")
