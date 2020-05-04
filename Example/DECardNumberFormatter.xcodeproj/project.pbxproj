@@ -12,6 +12,8 @@
 		1A2D5BC6246031D1003EE3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D5BC2246031D1003EE3E4 /* AppDelegate.swift */; };
 		1AA4645A246042180093D66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA46458246042180093D66D /* Main.storyboard */; };
 		1AA4645B246042180093D66D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA46459246042180093D66D /* LaunchScreen.storyboard */; };
+		1AA464662460468A0093D66D /* DECardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA464642460468A0093D66D /* DECardNumberTextField.swift */; };
+		1AA464672460468A0093D66D /* DECardNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA464652460468A0093D66D /* DECardNumberFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		1A2D5BC3246031D1003EE3E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AA46458246042180093D66D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1AA46459246042180093D66D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AA464642460468A0093D66D /* DECardNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DECardNumberTextField.swift; path = ../Sources/DECardNumberFormatter/DECardNumberTextField.swift; sourceTree = "<group>"; };
+		1AA464652460468A0093D66D /* DECardNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DECardNumberFormatter.swift; path = ../Sources/DECardNumberFormatter/DECardNumberFormatter.swift; sourceTree = "<group>"; };
 		1AD5037223EC129E001D0033 /* DECardNumberFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DECardNumberFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,7 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AD5036923EC129E001D0033 = {
+		1AA464682460468F0093D66D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1AA464652460468A0093D66D /* DECardNumberFormatter.swift */,
+				1AA464642460468A0093D66D /* DECardNumberTextField.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		1AA46469246046A50093D66D /* General */ = {
 			isa = PBXGroup;
 			children = (
 				1A2D5BC2246031D1003EE3E4 /* AppDelegate.swift */,
@@ -44,6 +57,15 @@
 				1AA46459246042180093D66D /* LaunchScreen.storyboard */,
 				1AA46458246042180093D66D /* Main.storyboard */,
 				1A2D5BC3246031D1003EE3E4 /* Info.plist */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		1AD5036923EC129E001D0033 = {
+			isa = PBXGroup;
+			children = (
+				1AA46469246046A50093D66D /* General */,
+				1AA464682460468F0093D66D /* Sources */,
 				1AD5037323EC129E001D0033 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +151,8 @@
 				1A2D5BC6246031D1003EE3E4 /* AppDelegate.swift in Sources */,
 				1A2D5BC5246031D1003EE3E4 /* SceneDelegate.swift in Sources */,
 				1A2D5BC4246031D1003EE3E4 /* ViewController.swift in Sources */,
+				1AA464662460468A0093D66D /* DECardNumberTextField.swift in Sources */,
+				1AA464672460468A0093D66D /* DECardNumberFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
