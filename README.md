@@ -17,6 +17,26 @@
 - 4-6-5 • (4-6-5-4)
 - 4-4-4-4 • (4-4-4-4-3)
 
+## Integration
+
+#### Swift Package Manager
+
+You can use [The Swift Package Manager](https://swift.org/package-manager) to install `DECardNumberFormatter` by adding the proper description to your `Package.swift` file:
+
+```swift
+// swift-tools-version:5.2
+
+import PackageDescription
+
+let package = Package(
+    name: "YOUR_PROJECT_NAME",
+    dependencies: [
+        .package(url: "https://github.com/Darkngs/DECardNumberFormatter.git", from: "2.0.0"),
+    ]
+)
+```
+Then run `swift build` whenever you get prepared.
+
 ## Example - DECardNumberFormatter
 ```swift
 let cardNumberFormatter = DECardNumberFormatter()
