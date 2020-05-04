@@ -36,6 +36,12 @@ public class DECardNumberFormatter {
    
    // MARK: -
    
+   public init() {
+      
+   }
+   
+   // MARK: -
+   
    private func cardFormat(for cardType: DECardBrand) -> DECardNumberFormat {
       var cardFormat: DECardNumberFormat = .de4444
       switch cardType {
