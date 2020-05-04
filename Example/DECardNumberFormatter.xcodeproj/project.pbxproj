@@ -7,27 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AD5037623EC129E001D0033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5037523EC129E001D0033 /* AppDelegate.swift */; };
-		1AD5037823EC129E001D0033 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5037723EC129E001D0033 /* SceneDelegate.swift */; };
-		1AD5037A23EC129E001D0033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5037923EC129E001D0033 /* ViewController.swift */; };
-		1AD5037D23EC129E001D0033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5037B23EC129E001D0033 /* Main.storyboard */; };
-		1AD5037F23EC12A0001D0033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5037E23EC12A0001D0033 /* Assets.xcassets */; };
-		1AD5038223EC12A0001D0033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5038023EC12A0001D0033 /* LaunchScreen.storyboard */; };
-		1AD5038B23EC14A6001D0033 /* DECardNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5038923EC14A6001D0033 /* DECardNumberFormatter.swift */; };
-		1AD5038C23EC14A6001D0033 /* DECardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5038A23EC14A6001D0033 /* DECardNumberTextField.swift */; };
+		1A2D5BC4246031D1003EE3E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D5BC0246031D1003EE3E4 /* ViewController.swift */; };
+		1A2D5BC5246031D1003EE3E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D5BC1246031D1003EE3E4 /* SceneDelegate.swift */; };
+		1A2D5BC6246031D1003EE3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D5BC2246031D1003EE3E4 /* AppDelegate.swift */; };
+		1A2D5BC7246031D1003EE3E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D5BC3246031D1003EE3E4 /* Info.plist */; };
+		1A2D5BCC246031E9003EE3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D5BC8246031E9003EE3E4 /* Main.storyboard */; };
+		1A2D5BCD246031E9003EE3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D5BCA246031E9003EE3E4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2D5BC0246031D1003EE3E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A2D5BC1246031D1003EE3E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A2D5BC2246031D1003EE3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A2D5BC3246031D1003EE3E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A2D5BC9246031E9003EE3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A2D5BCB246031E9003EE3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD5037223EC129E001D0033 /* DECardNumberFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DECardNumberFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD5037523EC129E001D0033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AD5037723EC129E001D0033 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1AD5037923EC129E001D0033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AD5037C23EC129E001D0033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1AD5037E23EC12A0001D0033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AD5038123EC12A0001D0033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1AD5038323EC12A0001D0033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AD5038923EC14A6001D0033 /* DECardNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DECardNumberFormatter.swift; sourceTree = SOURCE_ROOT; };
-		1AD5038A23EC14A6001D0033 /* DECardNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DECardNumberTextField.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +39,12 @@
 		1AD5036923EC129E001D0033 = {
 			isa = PBXGroup;
 			children = (
-				1AD5037423EC129E001D0033 /* DECardNumberFormatter */,
+				1A2D5BC2246031D1003EE3E4 /* AppDelegate.swift */,
+				1A2D5BC1246031D1003EE3E4 /* SceneDelegate.swift */,
+				1A2D5BC0246031D1003EE3E4 /* ViewController.swift */,
+				1A2D5BCA246031E9003EE3E4 /* LaunchScreen.storyboard */,
+				1A2D5BC8246031E9003EE3E4 /* Main.storyboard */,
+				1A2D5BC3246031D1003EE3E4 /* Info.plist */,
 				1AD5037323EC129E001D0033 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,22 +55,6 @@
 				1AD5037223EC129E001D0033 /* DECardNumberFormatter.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1AD5037423EC129E001D0033 /* DECardNumberFormatter */ = {
-			isa = PBXGroup;
-			children = (
-				1AD5037523EC129E001D0033 /* AppDelegate.swift */,
-				1AD5037723EC129E001D0033 /* SceneDelegate.swift */,
-				1AD5038923EC14A6001D0033 /* DECardNumberFormatter.swift */,
-				1AD5038A23EC14A6001D0033 /* DECardNumberTextField.swift */,
-				1AD5037923EC129E001D0033 /* ViewController.swift */,
-				1AD5037B23EC129E001D0033 /* Main.storyboard */,
-				1AD5037E23EC12A0001D0033 /* Assets.xcassets */,
-				1AD5038023EC12A0001D0033 /* LaunchScreen.storyboard */,
-				1AD5038323EC12A0001D0033 /* Info.plist */,
-			);
-			path = DECardNumberFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +115,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD5038223EC12A0001D0033 /* LaunchScreen.storyboard in Resources */,
-				1AD5037F23EC12A0001D0033 /* Assets.xcassets in Resources */,
-				1AD5037D23EC129E001D0033 /* Main.storyboard in Resources */,
+				1A2D5BC7246031D1003EE3E4 /* Info.plist in Resources */,
+				1A2D5BCD246031E9003EE3E4 /* LaunchScreen.storyboard in Resources */,
+				1A2D5BCC246031E9003EE3E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,29 +128,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD5037A23EC129E001D0033 /* ViewController.swift in Sources */,
-				1AD5038C23EC14A6001D0033 /* DECardNumberTextField.swift in Sources */,
-				1AD5037623EC129E001D0033 /* AppDelegate.swift in Sources */,
-				1AD5038B23EC14A6001D0033 /* DECardNumberFormatter.swift in Sources */,
-				1AD5037823EC129E001D0033 /* SceneDelegate.swift in Sources */,
+				1A2D5BC6246031D1003EE3E4 /* AppDelegate.swift in Sources */,
+				1A2D5BC5246031D1003EE3E4 /* SceneDelegate.swift in Sources */,
+				1A2D5BC4246031D1003EE3E4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1AD5037B23EC129E001D0033 /* Main.storyboard */ = {
+		1A2D5BC8246031E9003EE3E4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AD5037C23EC129E001D0033 /* Base */,
+				1A2D5BC9246031E9003EE3E4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1AD5038023EC12A0001D0033 /* LaunchScreen.storyboard */ = {
+		1A2D5BCA246031E9003EE3E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AD5038123EC12A0001D0033 /* Base */,
+				1A2D5BCB246031E9003EE3E4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
