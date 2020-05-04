@@ -2,7 +2,7 @@ import UIKit
 
 public class DECardNumberTextField: UITextField {
    
-   private var shouldFormatNumber: Bool = true
+   private var shouldFormatNumber = true
    
    private weak var hiddenDelegate: UITextFieldDelegate?
    
