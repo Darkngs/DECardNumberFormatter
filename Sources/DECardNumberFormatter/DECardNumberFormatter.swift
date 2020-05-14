@@ -1,3 +1,7 @@
+// Developed by Mykola Darkngs Golyash
+// 2020
+// http://golyash.com
+
 import Foundation
 
 public enum DECardBrand {
