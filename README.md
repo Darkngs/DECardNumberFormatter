@@ -21,21 +21,15 @@
 
 #### Swift Package Manager
 
-You can use [The Swift Package Manager](https://swift.org/package-manager) to install `DECardNumberFormatter` by adding the proper description to your `Package.swift` file:
+You can use the [Swift Package Manager](https://swift.org/package-manager) to install `DECardNumberFormatter` by adding the following dependency to your `Package.swift` file:
 
 ```swift
-// swift-tools-version:5.2
-
-import PackageDescription
-
-let package = Package(
-    name: "YOUR_PROJECT_NAME",
-    dependencies: [
-        .package(url: "https://github.com/Darkngs/DECardNumberFormatter.git", from: "2.0.0"),
-    ]
-)
+.package(url: "https://github.com/Darkngs/DECardNumberFormatter.git", from: "2.0.0"),
 ```
-Then run `swift build` whenever you get prepared.
+
+#### Manually
+
+Alternatively you can directly add the DECardNumberFormatter.swift & DECardNumberTextField.swift source files to your project.
 
 ## Example - DECardNumberFormatter
 ```swift
